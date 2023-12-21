@@ -25,7 +25,7 @@ if (move_uploaded_file($product_image['tmp_name'], $image_url)) {
     echo "File uploaded successfully";
 
     // Get the URL of the uploaded file
-    $image_url = 'http://localhost/web-PHP/uploads/' . basename($product_image['name']);
+    $image_url = 'http://localhost/Web-PHP/uploads/' . basename($product_image['name']);
 
     // Connect to the database
     $servername = "localhost";
