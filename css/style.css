@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  padding: 1rem;
+}
+
+h1 {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.imgTd {
+  display: flex;
+  justify-content: center;
+}
+.actionTd {
+  display: flex;
+  justify-content: center;
+}
+
+.addProductSectionForm {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  justify-content: space-between;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+  .addProductSectionForm {
+    flex-direction: column;
+  }
+  .productSection {
+    overflow-x: scroll;
+  }
+}
